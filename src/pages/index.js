@@ -14,7 +14,7 @@ const IndexPage = () => (
       <div className={"section intro"}>
         <Background
           alt="Seattle Space Needle"
-          filename="_site_background.jpg"
+          filename="site_background.jpg"
         />
         <div className={"container"}>
           <header
@@ -46,7 +46,7 @@ const IndexPage = () => (
               <p>
                 We're building a community and publishing resources to help indie developers grow their base. We're currently in a closed beta right now. If you are a
                 small studio or individual looking share your game or think you
-                could provide useful resources, then request access here using
+                could provide useful resources, then request access using
                 the form below!
               </p>
               <p className={"mt-5"}>
