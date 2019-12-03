@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
 import Image from "../components/image"
 import Background from "../components/background"
 import { ReactTypeformEmbed } from "react-typeform-embed"
@@ -11,29 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div id="fullpage">
-      <div className={"section intro"}>
-        <Background
-          alt="Seattle Space Needle"
-          filename="site_background.jpg"
-        />
-        <div className={"container"}>
-          <header
-            className={"home-hero row justify-content-end"}
-            style={{ paddingTop: "40vh" }}
-          >
-            <div className={"col-5 text-right"}>
-              <h1 className={"text-right mt-3 mb-0 text-uppercase"}>
-                SeattleIndie.Dev
-              </h1>
-            </div>
-            <div className={"col-1"}>
-              <div style={{ maxWidth: "50px" }}>
-                <Image alt="SeattleIndie.Dev" filename="logo.png" />
-              </div>
-            </div>
-          </header>
-        </div>
-      </div>
+      <Header />
 
       <div className="content section py-5">
         <div className="container">
@@ -52,7 +31,7 @@ const IndexPage = () => (
               <p className={"mt-5"}>
                 You can always send us an email too:{" "}
                 <a href="mailto:hello@seattleindie.dev">
-                  hello @ seattle.indie.dev
+                  hello @ seattleindie.dev
                 </a>
                 .
               </p>

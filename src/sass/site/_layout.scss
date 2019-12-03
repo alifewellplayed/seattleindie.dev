@@ -7,7 +7,8 @@
     background-color: $white;
 
     &.intro {
-    //background: transparent url(../img/bg.jpg) no-repeat 0 0;
+        transition: all 1500ms ease;
+        //background: transparent url(../img/bg.jpg) no-repeat 0 0;
         color: $white;
         h1 {
             font-size: 42px;
