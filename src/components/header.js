@@ -1,14 +1,12 @@
-import { Link } from "gatsby"
 import Image from "../components/image"
 import React from "react"
+import SvgLogo from "../components/logo"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"
 
 const colorArray = [
-  "#ed1953", // Red
-  "#7cd1e4", //lightblue
-  "#f38bb4", //Pink
-  "#f4ed24", //yellow
-  "#95d1af", // green
-  "#3e60ad" // Purple
+  "blue-red",
+  "pink-yellow",
 ];
 
 class Header extends React.Component {
@@ -45,28 +43,31 @@ class Header extends React.Component {
 
   render() {
     // console.log(this.state);
-    const stylesObj = {
-      background: this.state.color
-    };
+    const sectionColor = this.state.color;
 
     return (
-      <div className={"section intro"} style={stylesObj}>
-         <div className={"container"}>
+      <div className={`section intro mb-5 ${sectionColor}`}>
+        <div className={"container"}>
           <header
             className={"home-hero row justify-content-end"}
-            style={{ paddingTop: "40vh" }}
+            style={{ paddingTop: "42vh" }}
           >
             <div className={"col-5 text-right"}>
-              <h1 className={"text-right mt-3 mb-0 text-uppercase"}>
+              <h1 className={"text-right mb-0 text-uppercase title h1"}>
                 SeattleIndie.Dev
               </h1>
             </div>
             <div className={"col-1"}>
               <div style={{ maxWidth: "50px" }}>
-                <Image alt="SeattleIndie.Dev" filename="logo.png" />
+                <SvgLogo />
               </div>
             </div>
           </header>
+        </div>
+        <div className={"scroll-to text-center"}>
+          <button className={"btn btn-link"}>
+            <FontAwesomeIcon icon={faAngleDoubleDown} />
+          </button>
         </div>
       </div>
     )

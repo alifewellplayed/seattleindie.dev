@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `SeattleIndie.Dev`,
     description: ``,
-    author: `@gatsbyjs`,
+    author: `@underlost`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `SeattleIndie.Dev`,
+        short_name: `Seattle-indie-dev`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

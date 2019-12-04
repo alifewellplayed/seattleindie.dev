@@ -1,0 +1,67 @@
+.section {
+  &.yellow-purple {
+    background-color: $siteYellow;
+    color: $sitePurple;
+    .title {
+      color: $sitePurple;
+    }
+    svg path {
+      fill: $sitePurple;
+    }
+  }
+
+  &.blue-red {
+    background-color: $siteBlue;
+    color: $siteRed;
+    .title {
+      color: $siteRed;
+    }
+    svg path {
+      fill: $siteRed;
+    }
+  }
+
+  &.red-blue {
+    background-color: $siteRed;
+    color: $siteBlue;
+    .title {
+      color: $siteBlue;
+    }
+    svg path {
+      fill: $siteBlue;
+    }
+  }
+
+  &.pink-yellow {
+    background-color: $sitePink;
+    color: $siteYellow;
+    .title {
+      color: $siteYellow;
+    }
+    svg path {
+      fill: $siteYellow;
+    }
+  }
+
+  &.purple-blue {
+    background-color: $sitePurple;
+    color: $siteBlue;
+    .title {
+      color: $siteBlue;
+    }
+    svg path {
+      fill: $siteBlue;
+    }
+  }
+
+  &.green-blue {
+    background-color: $siteGreen;
+    color: $siteDarkBlue;
+    .title {
+      color: $siteDarkBlue;
+    }
+    svg path {
+      fill: $siteDarkBlue;
+    }
+  }
+}

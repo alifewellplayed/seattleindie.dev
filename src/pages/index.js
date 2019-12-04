@@ -14,13 +14,16 @@ const IndexPage = () => (
     <div id="fullpage">
       <Header />
 
-      <div className="content section py-5">
+      <div className="content section py-5 mb-5">
         <div className="container">
           <div className="inner-container">
-            <p className="emphasis">
+            <h2 className="emphasis h4 py-4" style={{
+              borderTop: '1px solid #333',
+              borderBottom: '1px solid #333',
+            }}>
               <strong>SeattleIndie.Dev</strong> is a community for people making
               video games.
-            </p>
+            </h2>
             <div className="main-content">
               <p>
                 We're building a community and publishing resources to help indie developers grow their base. We're currently in a closed beta right now. If you are a
@@ -48,7 +51,6 @@ const IndexPage = () => (
                 height: '200px',
                 position: 'relative'
               }}>
-                <ReactTypeformEmbed url="https://seattleindiedev.typeform.com/to/WM496C" />
               </div>
             </div>
           </div>
