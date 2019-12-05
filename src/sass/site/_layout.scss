@@ -8,11 +8,11 @@
 
     &.intro {
         position: relative;
-        transition: all 2500ms ease;
+        transition: all 1.5s ease;
         //background: transparent url(../img/bg.jpg) no-repeat 0 0;
         color: $white;
         & * {
-            transition: all 2500ms ease;
+            transition: all 1.5s ease;
         }
         .title {
             font-size: 42px;
@@ -25,7 +25,10 @@
             left: 0; right: 0;
             bottom: 2.5rem;
             margin: auto;
-            
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: arrowBounce;
+            animation-timing-function: ease;
         }
         .btn.btn-link {
             color: $white;
@@ -60,4 +63,10 @@
   .section.intro {
     height: 100vh;
   }
+}
+
+@keyframes arrowBounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
 }
