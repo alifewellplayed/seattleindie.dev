@@ -19,11 +19,8 @@ const Layout = ({ children }) => {
           color: "#333",
           position: "relative",
           zIndex: "10",
-        }}
-      >
-        © {new Date().getFullYear()}{" "}
-        <a href="https://alifewellplayed.com">A Life Well Played</a>, All rights
-        reserved.
+        }}>
+        © {new Date().getFullYear()} <a href="https://alifewellplayed.com">A Life Well Played</a>, All rights reserved.
       </footer>
     </>
   )

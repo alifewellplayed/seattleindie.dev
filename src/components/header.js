@@ -1,21 +1,12 @@
-import Image from "../components/image"
 import React from "react"
 import SvgLogo from "../components/logo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"
-import { ScrollTo } from "react-scroll-to"
+import ScrollIntoView from "react-scroll-into-view"
 
-
-const colorArray = [
-  "yellow-purple",
-  "blue-red",
-  "pink-yellow",
-  "purple-blue",
-  "green-blue",
-];
+const colorArray = ["yellow-purple", "blue-red", "pink-yellow", "purple-blue", "green-blue"]
 
 class Header extends React.Component {
-  
   constructor(props) {
     super(props)
     this.state = {
@@ -56,14 +47,9 @@ class Header extends React.Component {
       <>
         <div className={`section intro mb-5 ${sectionColor}`}>
           <div className={"container"}>
-            <header
-              className={"home-hero row justify-content-end"}
-              style={{ paddingTop: "42vh" }}
-            >
+            <header className={"home-hero row justify-content-end"} style={{ paddingTop: "42vh" }}>
               <div className={"col-5 text-right"}>
-                <h1 className={"text-right mb-0 text-uppercase title h1"}>
-                  SeattleIndie.Dev
-                </h1>
+                <h1 className={"text-right mb-0 text-uppercase title h1"}>SeattleIndie.Dev</h1>
               </div>
               <div className={"col-1"}>
                 <div style={{ maxWidth: "50px" }}>
@@ -73,22 +59,13 @@ class Header extends React.Component {
             </header>
           </div>
           <div className={"scroll-to text-center"}>
-            <ScrollTo>
-              {({ scrollTo }) => (
-                <button
-                  type="button"
-                  className={"btn btn-link"}
-                  onClick={() =>
-                    scrollTo({ ref: this.mainRef, y: 200, smooth: true })
-                  }
-                >
-                  <FontAwesomeIcon icon={faAngleDoubleDown} />
-                </button>
-              )}
-            </ScrollTo>
+            <ScrollIntoView selector="#scrolled">
+              <button type="button" className={"btn btn-link"}>
+                <FontAwesomeIcon icon={faAngleDoubleDown} />
+              </button>
+            </ScrollIntoView>
           </div>
         </div>
-        <div ref={this.mainRef}>My Element</div>
       </>
     )
   }

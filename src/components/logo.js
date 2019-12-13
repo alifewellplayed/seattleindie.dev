@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const SvgLogo = props => (
   <svg className="siteLogo" width={26.49} height={37.087} {...props}>
