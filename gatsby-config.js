@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `SeattleIndie.Dev`,
-    description: ``,
+    description: `We're building a community and publishing resources to help indie developers grow their base.`,
     author: `@underlost`,
   },
   plugins: [
@@ -34,11 +34,22 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-154624860-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "seattleindie.dev",
+      },
+    },
+    //`gatsby-plugin-offline`,
   ],
 }
