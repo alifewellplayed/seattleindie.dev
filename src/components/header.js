@@ -45,14 +45,14 @@ class Header extends React.Component {
 
     return (
       <>
-        <div className={`section intro mb-5 ${sectionColor}`}>
+        <div className={`section intro ${sectionColor}`}>
           <div className={"container"}>
             <header className={"home-hero row justify-content-end"} style={{ paddingTop: "42vh" }}>
-              <div className={"col-5 text-right"}>
+              <div className={"col-md-5 text-right"}>
                 <h1 className={"text-right mb-0 text-uppercase title h1"}>SeattleIndie.Dev</h1>
               </div>
-              <div className={"col-1"}>
-                <div style={{ maxWidth: "50px" }}>
+              <div className={"col-md-1 text-md-left text-right"}>
+                <div className="mt-3 mt-md-0 ml-auto mr-0" style={{ maxWidth: "50px" }}>
                   <SvgLogo />
                 </div>
               </div>
